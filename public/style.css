@@ -1,0 +1,421 @@
+/* Reset & Base Styles */
+body { /*later edit this as well*/
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #ffffff;
+    color: #333;
+    line-height: 1.6;
+    padding: 0 20px;
+}
+
+/* Logo styling */
+.logo {
+    display: block;
+    margin: 30px auto 10px;
+    width: 160px;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Add slight shadow
+h1, p, h2 {
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.6);
+}*/
+
+/* Header */
+h1 {
+    text-align: center;
+    padding-top: 40px;
+    font-size: 2.5em;
+    color: #035d69;
+}
+
+/* Paragraph */
+p {
+    text-align: center;
+    font-size: 1.1em;
+    max-width: 600px;
+    margin: 0 auto 30px;
+}
+
+/* Navigation */
+h2 {
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#logout a {
+    background-color: #b90303 !important;
+}
+
+#logout a:hover {
+    background-color: #fd7373 !important;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+ul li {
+    margin: 15px 0;
+}
+
+ul li a {
+    display: block;
+    padding: 12px 20px;
+    text-decoration: none;
+    background-color: #035d69;
+    color: white;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    font-weight: bold;
+}
+
+ul li a:hover {
+    background-color: #55abb6;
+}
+
+
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 60px;
+    padding: 20px 0;
+    font-size: 0.9em;
+    color: #777;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    p, h2, ul li a {
+        font-size: 1em;
+    }
+
+    ul li a {
+        padding: 10px 15px;
+    }
+    
+    /* Admin Header */
+    .admin-header {
+        background-color: #035d69;
+        color: white;
+        padding: 25px 0;
+        text-align: center;
+        border-radius: 0 0 10px 10px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Admin Navigation */
+    .admin-nav {
+        margin-top: 30px;
+    }
+
+    .admin-nav ul {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 0;
+        margin: 0 auto;
+        max-width: 800px;
+    }
+
+    .admin-nav li {
+        list-style: none;
+    }
+
+    .admin-nav a {
+        display: inline-block;
+        padding: 12px 24px;
+        background-color: #035d69;
+        color: white;
+        text-decoration: none;
+        border-radius: 8px;
+        font-weight: bold;
+        transition: background-color 0.3s ease;
+        text-shadow: none;
+    }
+
+    .admin-nav a:hover {
+        background-color: #023c45;
+    }
+
+    /* Admin Main Content */
+    .admin-content {
+        padding: 40px 20px;
+        text-align: center;
+        max-width: 800px;
+        margin: 0 auto;
+        font-size: 1.1em;
+    }
+
+}
+
+ul li a {
+    text-shadow: none !important;
+}
+
+.products-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 30px auto;
+    font-size: 1em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.products-table th,
+.products-table td {
+    padding: 14px 18px;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.products-table th {
+    background-color: #035d69;
+    color: white;
+    font-weight: bold;
+}
+
+.products-table tr:hover {
+    background-color: #f2f2f2;
+}
+
+.add-product-btn {
+    display: inline-block;
+    margin: 20px auto;
+    background-color: #84c96f;
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.add-product-btn:hover {
+    background-color: #689e57;
+}
+
+.action-buttons {
+    white-space: nowrap; /* no wrapping */
+}
+
+.action-buttons a {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    text-decoration: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 0.95em;
+}
+
+.action-buttons .edit {
+    background-color: #54c6b9;
+    color: white;
+}
+
+.action-buttons .edit:hover {
+    background-color: #3c9086;
+}
+
+.action-buttons .delete {
+    background-color: #d9534f;
+    color: white;
+}
+
+.action-buttons .delete:hover {
+    background-color: #b52722;
+}
+
+.back-btn {
+    display: inline-block;
+    margin: 20px auto;
+    background-color: #549391;
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.back-btn:hover {
+    background-color: #5a6268;
+}
+
+.product-row {
+    margin-bottom: 10px;
+}
+
+.total {
+    font-weight: bold;
+}
+
+/* Receipt Print View */
+.receipt-body {
+    font-family: Arial, sans-serif;
+    margin: 40px;
+}
+
+.receipt-header {
+    margin-bottom: 20px;
+}
+
+.receipt-flex-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.receipt-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.receipt-table th,
+.receipt-table td {
+    border: 1px solid #000;
+    padding: 6px 12px;
+    text-align: left;
+}
+
+.receipt-total-box {
+    float: right;
+    margin-top: 20px;
+    border: 1px solid #000;
+    background-color: #fbf4b7;
+    padding: 10px;
+    width: 200px;
+    text-align: right;
+}
+
+.receipt-signature {
+    margin-top: 60px;
+}
+
+.receipt-button-box {
+    margin-top: 30px;
+    text-align: center;
+}
+
+@media print {
+    .receipt-button-box,
+    .back-btn {
+        display: none;
+    }
+}
+
+.form-edit {
+    max-width: 600px;
+    margin: 30px auto;
+    background-color: #f9f9f9;
+    padding: 20px 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.form-edit label {
+    display: block;
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #035d69;
+}
+
+.form-edit input[type="text"],
+.form-edit input[type="email"],
+.form-edit input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+}
+
+.form-edit input:focus {
+    border-color: #035d69;
+    outline: none;
+    box-shadow: 0 0 4px rgba(3, 93, 105, 0.3);
+}
+
+
+
+
+.form-edit input[type="text"],
+.form-edit input[type="number"],
+.form-edit input[type="email"],
+.form-edit input[type="password"],
+.form-edit select,
+.form-edit textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-edit input:focus,
+.form-edit select:focus,
+.form-edit textarea:focus {
+    border-color: #035d69;
+    box-shadow: 0 0 4px rgba(3, 93, 105, 0.3);
+    outline: none;
+}
+
+.popup-message {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    z-index: 1000;
+    font-weight: bold;
+    animation: fadeOut 4s forwards;
+}
+
+@keyframes fadeOut {
+    0%   { opacity: 1; }
+    80%  { opacity: 1; }
+    100% { opacity: 0; display: none; }
+}
+
+
+.message-success {
+    color: green;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.message-error {
+    color: red;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+
+
